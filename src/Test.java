@@ -1,5 +1,5 @@
 import models.*;
-
+import java.util.ArrayList;
 public class Test {
 
 	public static void main(String[] args) {
@@ -17,6 +17,12 @@ public class Test {
 		System.out.println("d1 : "+d1);
 		DetailPlat d2 = new DetailPlat(a2,1.50f);
 		System.out.println("d2 : "+d2);
-		Plat p1 = new Plat(15.0f,"Carotte à la mangue", null);
+		ArrayList<DetailPlat> ar =new ArrayList();
+		ar.add(d1);
+		ar.add(d2);
+		Plat p1 = new Plat(15.0f,"Carotte à la mangue", ar);
+		System.out.println("p1 : "+p1);
+		System.out.println("cet aliment est composé de : "+p1.getDetailPlat());
+
 	}
 }

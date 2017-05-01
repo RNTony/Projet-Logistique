@@ -13,9 +13,9 @@ public class Connexion {
 		
 		
 		con=null;
-		String  url="";
+		String  url="jdbc:mysql://localhost:3306/";
 		String user="root";
-		String mdp="";
+		String mdp="P1212121";
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
