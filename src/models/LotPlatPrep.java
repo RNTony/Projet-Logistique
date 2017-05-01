@@ -9,8 +9,9 @@ public class LotPlatPrep {
 	
 public LotPlatPrep () {}
 
-public LotPlatPrep(ArrayList<Plat> LotPlatPrep) {
+public LotPlatPrep(ArrayList<Plat> LotPlatPrep,int id) {
 		this.LotPlatPrep = LotPlatPrep;
+		this.id_LotPlatPrep=id;
 	}
 
 public int getId_LotPlatPrep() {

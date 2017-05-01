@@ -10,8 +10,9 @@ public class Stock {
 
 public Stock () {}
 
-public Stock(ArrayList<Aliment> listeAliment) {
+public Stock(ArrayList<Aliment> listeAliment,int id) {
 		this.listeAliment = listeAliment;
+		this.id_Stock=id;
 	}
 
 

@@ -34,7 +34,7 @@ public void setNomSociete(String nomSociete) {
 
 @Override
 public String toString() {
-	return "Fournisseur [Socièté =" + nomSociete + "]";
+	return "Fournisseur [nom = " + nomSociete + "]";
 }
 
 

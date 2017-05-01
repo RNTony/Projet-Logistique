@@ -2,16 +2,16 @@ package models;
 
 public class Livraison {
 	private float poid;
-	private int id_Livraison;
+	private static int id_Livraison=0;
 	private float prix;
 	private Lot lot;
 	
 	//Constructeur
 	public Livraison() {}
 
-	public Livraison(float poid, int id_Livraison, float prix,Lot lot) {
+	public Livraison(float poid, float prix,Lot lot) {
 		this.poid = poid;
-		this.id_Livraison = id_Livraison;
+		id_Livraison++;
 		this.prix = prix;
 		this.lot=lot;
 	}
@@ -43,7 +43,7 @@ public class Livraison {
 	}
 
 	public void setId_Livraison(int id_Livraison) {
-		this.id_Livraison = id_Livraison;
+		Livraison.id_Livraison = id_Livraison;
 	}
 
 	public float getPrix() {
