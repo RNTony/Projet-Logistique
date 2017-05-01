@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 
 public class LotPlatPrep {
-		private int id_LotPlatPrep;
+		private int id_LotPlatPrep=1;
 		private ArrayList<Plat>LotPlatPrep;
 
 	
@@ -27,6 +27,11 @@ public ArrayList<Plat> getLotPlatPrep() {
 
 public void setLotPlatPrep(ArrayList<Plat> lotPlatPrep) {
 	LotPlatPrep = lotPlatPrep;
+}
+
+@Override
+public String toString() {
+	return "LotPlatPrep [id_LotPlatPrep=" + id_LotPlatPrep + ", LotPlatPrep=" + LotPlatPrep + "]";
 }
 
 }

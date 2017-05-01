@@ -1,14 +1,14 @@
 package models;
 
 public class Utilisateur {
-	private int id_Utilisateur;
+	private static int id_Utilisateur=0;
 	private String identifiant;
 	private String mdp;
 	
 	public Utilisateur() {}
 	
-	public Utilisateur(int id_Utilisateur, String identifiant, String mdp) {
-		this.id_Utilisateur = id_Utilisateur;
+	public Utilisateur(String identifiant, String mdp) {
+		id_Utilisateur ++;
 		this.identifiant = identifiant;
 		this.mdp = mdp;
 	}
@@ -24,7 +24,7 @@ public class Utilisateur {
 		return id_Utilisateur;
 	}
 	public void setId_Utilisateur(int id_Utilisateur) {
-		this.id_Utilisateur = id_Utilisateur;
+		Utilisateur.id_Utilisateur = id_Utilisateur;
 	}
 	public String getIdentifiant() {
 		return identifiant;
@@ -37,6 +37,11 @@ public class Utilisateur {
 	}
 	public void setMdp(String mdp) {
 		this.mdp = mdp;
+	}
+
+	@Override
+	public String toString() {
+		return "Utilisateur [identifiant=" + identifiant + ", mdp=" + mdp + "]";
 	}
 	
 }

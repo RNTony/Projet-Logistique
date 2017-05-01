@@ -2,19 +2,16 @@ package models;
 
 public class Aliment {
  
-	private float poid;
-	private int id_Aliment;
-	private float prix;
+	private static int id_Aliment=0;
 	private String nom;
- 
+	private Livraison livraison;
 	
  public Aliment () {}
  
- public Aliment (float p, int id,float prix, String nom){
-	 this.poid=p;
-	 this.id_Aliment=id;
-	 this.prix=prix;
+ public Aliment (String nom, Livraison l){
+	 id_Aliment++;
 	 this.nom=nom;
+	 this.livraison=l;
 	 }
 
  
@@ -24,28 +21,25 @@ public class Aliment {
  
 
  
-public float getPoid() {
-	return poid;
+@Override
+public String toString() {
+	return "Aliment [nom=" + nom + ", livraison=" + livraison + "]";
 }
 
-public void setPoid(float poid) {
-	this.poid = poid;
+public Livraison getLivraison() {
+	return livraison;
 }
 
-public int getId_Aliment() {
+public void setLivraison(Livraison livraison) {
+	this.livraison = livraison;
+}
+
+public static int getId_Aliment() {
 	return id_Aliment;
 }
 
-public void setId_Aliment(int id_Aliment) {
-	this.id_Aliment = id_Aliment;
-}
-
-public float getPrix() {
-	return prix;
-}
-
-public void setPrix(float prix) {
-	this.prix = prix;
+public static void setId_Aliment(int id_Aliment) {
+	Aliment.id_Aliment = id_Aliment;
 }
 
 public String getNom() {

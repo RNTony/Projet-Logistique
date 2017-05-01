@@ -4,21 +4,32 @@ public class Livraison {
 	private float poid;
 	private int id_Livraison;
 	private float prix;
+	private Lot lot;
 	
+	//Constructeur
 	public Livraison() {}
 
-	public Livraison(float poid, int id_Livraison, float prix) {
+	public Livraison(float poid, int id_Livraison, float prix,Lot lot) {
 		this.poid = poid;
 		this.id_Livraison = id_Livraison;
 		this.prix = prix;
+		this.lot=lot;
 	}
 
 	 
 	//Fonction à définir
 	 
-	
-	
 	//Accesseurs
+
+	
+	public Lot getLot() {
+		return lot;
+	}
+
+	public void setLot(Lot lot) {
+		this.lot = lot;
+	}
+
 	public float getPoid() {
 		return poid;
 	}
@@ -41,6 +52,11 @@ public class Livraison {
 
 	public void setPrix(float prix) {
 		this.prix = prix;
+	}
+
+	@Override
+	public String toString() {
+		return "Livraison [poid=" + poid + ", id_Livraison=" + id_Livraison + ", prix=" + prix + ", lot=" + lot + "]";
 	}
 	
 	
