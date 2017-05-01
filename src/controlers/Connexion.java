@@ -20,7 +20,7 @@ public class Connexion {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			con=DriverManager.getConnection(url, user, mdp);
-			System.out.println("connexion reussite");
+			System.out.println("connexion reussie");
 			
 		} catch (ClassNotFoundException e1) {
 		 System.out.println("Impossible de charger le driver "+e1.getMessage());
