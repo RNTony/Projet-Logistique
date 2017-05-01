@@ -5,6 +5,7 @@ public class Aliment {
 	private static int id_Aliment=0;
 	private String nom;
 	private Livraison livraison;
+	private float poid;
 	
  public Aliment () {}
  
@@ -12,6 +13,7 @@ public class Aliment {
 	 id_Aliment++;
 	 this.nom=nom;
 	 this.livraison=l;
+	 poid=+this.livraison.getPoid(); 
 	 }
 
  
@@ -48,6 +50,14 @@ public String getNom() {
 
 public void setNom(String nom) {
 	this.nom = nom;
+}
+
+public float getPoid() {
+	return poid;
+}
+
+public void setPoid(float poid) {
+	this.poid = poid;
 }
  
 }
