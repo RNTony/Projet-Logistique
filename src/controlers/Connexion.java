@@ -13,7 +13,7 @@ public class Connexion {
 		
 		
 		con=null;
-		String  url="jdbc:mysql://localhost:3306/";
+		String  url="jdbc:mysql://localhost:3306/logistique";
 		String user="root";
 		String mdp="P1212121";
 		

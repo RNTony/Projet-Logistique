@@ -6,8 +6,9 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.password">P1212121</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/logistique</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.default_schema">logistique</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
     </session-factory>
 </hibernate-configuration>
