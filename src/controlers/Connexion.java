@@ -9,8 +9,9 @@ import java.sql.Statement;
 public class Connexion {
 	private static Statement st;
 	private static Connection con;
+	
+	
 	public static Connection Connect(){
-		
 		
 		con=null;
 		String  url="jdbc:mysql://localhost:3306/logistique";

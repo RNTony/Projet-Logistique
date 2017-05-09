@@ -1,4 +1,5 @@
 package models;
+import views.*;
 
 public class Aliment {
  
@@ -18,6 +19,7 @@ public class Aliment {
 
  
  //Fonction à définir
+
  
  //Accesseurs
  
@@ -59,5 +61,6 @@ public float getPoid() {
 public void setPoid(float poid) {
 	this.poid = poid;
 }
+
  
 }
