@@ -1,4 +1,4 @@
-package dao;
+/*package dao;
 
 import java.util.List;
 import java.sql.Connection;
@@ -23,5 +23,4 @@ public abstract class DAO<T> {
 }
 
 
-
-
+*/

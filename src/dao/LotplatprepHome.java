@@ -2,6 +2,7 @@ package dao;
 // Generated 8 mai 2017 22:46:10 by Hibernate Tools 5.2.1.Final
 
 import javax.ejb.Stateless;
+import models.*;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import org.apache.commons.logging.Log;
@@ -20,7 +21,7 @@ public class LotplatprepHome {
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	public void persist(Lotplatprep transientInstance) {
+	public void persist(LotPlatPrep transientInstance) {
 		log.debug("persisting Lotplatprep instance");
 		try {
 			entityManager.persist(transientInstance);
@@ -31,7 +32,7 @@ public class LotplatprepHome {
 		}
 	}
 
-	public void remove(Lotplatprep persistentInstance) {
+	public void remove(LotPlatPrep persistentInstance) {
 		log.debug("removing Lotplatprep instance");
 		try {
 			entityManager.remove(persistentInstance);
@@ -42,10 +43,10 @@ public class LotplatprepHome {
 		}
 	}
 
-	public Lotplatprep merge(Lotplatprep detachedInstance) {
+	public LotPlatPrep merge(LotPlatPrep detachedInstance) {
 		log.debug("merging Lotplatprep instance");
 		try {
-			Lotplatprep result = entityManager.merge(detachedInstance);
+			LotPlatPrep result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -54,10 +55,10 @@ public class LotplatprepHome {
 		}
 	}
 
-	public Lotplatprep findById(Integer id) {
+	public LotPlatPrep findById(Integer id) {
 		log.debug("getting Lotplatprep instance with id: " + id);
 		try {
-			Lotplatprep instance = entityManager.find(Lotplatprep.class, id);
+			LotPlatPrep instance = entityManager.find(LotPlatPrep.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {
