@@ -1,8 +1,7 @@
-/*package dao;
+package dao;
 
 import java.util.List;
 import java.sql.Connection;
-
 import controlers.Connexion;
 public abstract class DAO<T> {
 	
@@ -22,5 +21,3 @@ public abstract class DAO<T> {
 	public abstract void delete(T obj);
 }
 
-
-*/
