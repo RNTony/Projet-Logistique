@@ -24,7 +24,7 @@ public class Login {
 
 	private String IDUser = "admin";
 	private String Password = "admin";
-	//private MainScreen mainScreen;
+	private ChoixAction choixaction;
 	private JPasswordField passwordField;
 	private JLabel lblInformationIncorrectVeuillez;
 
@@ -82,8 +82,8 @@ public class Login {
 			public void actionPerformed(ActionEvent e) {
 				if(textID.getText().equals(IDUser) && passwordField.getText().equals(Password)){
 					lblInformationIncorrectVeuillez.setVisible(false);
-					//mainScreen = new MainScreen();
-					//mainScreen.main(null);
+					choixaction = new ChoixAction();
+					choixaction.main(null);
 					frmAuthentification.dispose();
 				}else{
 					lblInformationIncorrectVeuillez.setVisible(true);
